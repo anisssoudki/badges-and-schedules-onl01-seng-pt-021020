@@ -9,6 +9,7 @@ end
 
 
 def batch_badge_creator(attandees)
+<<<<<<< HEAD
 newarray = []
 attandees.each do |name|
   newarray.push("Hello, my name is #{name}.")
@@ -32,3 +33,25 @@ def printer(attandees)
      puts id
 end
 end
+=======
+	greeting = "Hello, my name is"
+	attandees.each do |array|
+
+  puts   "#{greeting} #{attandees}."
+  return   "#{greeting} #{attandees}."
+end 
+end
+
+def assign_rooms(attandees) 
+  
+  attandees.each_with_index do |array, index|
+    
+  return "Hello,#{attandees}! You'll be assigned to room #{index+1}!"
+end 
+end
+
+
+badge_maker(attandees)
+batch_badge_creator(attandees)
+assign_rooms(attandees)
+>>>>>>> d252298dd972d14f446b7938a96248af29b127bf
